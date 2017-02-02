@@ -173,3 +173,7 @@ Then  prepare the test database:
 Now run the rake test to run the tests:
 
     rake test
+    
+## Reset the counter    
+You should be able to access the counter table with Models::CustomAutoIncrement.
+And there's straight way to reset the counter for now, you can Models::CustomAutoIncrement.delete_all (which will erase all counters for all your tracked models) or find the one you need, access it directly and reset the counter.
